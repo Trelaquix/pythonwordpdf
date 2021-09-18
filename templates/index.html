@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact us form using php mysql</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Create PDF</h1>
+      <h3>Enter customer details</h3>
+</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-8">
+             <form action="/process-form" method="POST">
+                <div class="form-group">
+                    <label for="e_reference">e-Reference No</label>
+                    <input type="text" name="e_reference" id="e_reference" class="form-control" required>
+                </div>
+                <!-- <div class="form-group">
+                    <label for="generated_date">Generated Date</label>
+                    <input type="text" name="generated_date" id="generated_date" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="application_date">Application Date</label>
+                    <input type="text" name="application_date" id="application_date" class="form-control" required>
+                </div> -->
+                <div class="form-group">
+                    <label for="full_name">Full Name</label>
+                    <input type="text" name="full_name" id="full_name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="nric">NRIC</label>
+                    <input type="text" name="nric" id="nric" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Mobile Number</label>
+                    <input type="text" name="phone" id="phone" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="text" name="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Residential Address</label>
+                    <input type="text" name="address" id="address" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="allow_post">Post</label>
+                    <input type="checkbox" id="allow_post" name="allow_post">
+                </div>
+                <div class="form-group">
+                    <label for="allow_email">E-mail</label>
+                    <input type="checkbox" id="allow_email" name="allow_email">
+                </div>
+                <div class="form-group">
+                    <label for="allow_call">Phone Call/Voice Call</label>
+                    <input type="checkbox" id="allow_call" name="allow_call">
+                </div>
+                <div class="form-group">
+                    <label for="allow_text">Text Messages</label>
+                    <input type="checkbox" id="allow_text" name="allow_text">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success" type="submit">Submit</button>
+                    <button class="btn btn-danger" type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-2">
+        </div>
+      </div>
+    </div>
+</body>
+</html>

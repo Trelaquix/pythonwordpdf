@@ -1,0 +1,6 @@
+﻿flask
+docx-mailmerge
+fitz
+PyMuPDF
+pypandoc
+pyodbc
